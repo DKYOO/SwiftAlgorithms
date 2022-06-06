@@ -1,0 +1,56 @@
+Assignment name : mostDifficultLetter (A task Yandex)
+Expected files : solution.swift
+Allowed functions: All 🙂
+--------------------------------------------------------------------------------
+Input standard input or input.txt
+
+Output standard output or output.txt
+
+
+John decided to improve his typing speed. He noticed that he searched for some letters on the keyboard longer than others. He wonders which letter he has been looking for the longest. Write a program to help John find this out.
+John entered N letters.
+
+String S - the string entered by John has length N.
+
+Array A contains N non-negative integers, each number A(i) is the time in milliseconds from the start of input until the i-th letter was typed.
+
+It is believed that John began to look for the next letter immediately after he typed the previous one. The letter with index 0 was searched for A(0) milliseconds.
+
+Input format:
+
+The first line of the input contains N - the number of entered letters.
+
+The second line contains S - the entered string, consisting of N letters.
+
+The third line contains A - N non-negative integers separated by a space.
+
+Restrictions:
+
+0 < N < 10 pow 6
+0 ≤ A(i) < 10 pow 8
+
+Array A is sorted in ascending order:
+
+A(i) ≤ A(j) if i < j
+
+Output Format:
+
+Print the letter that John has been looking for the longest. If there are several letters with the same search time, print the one he typed last.
+
+
+Example:
+
+input.txt	output.txt
+3		a
+abc
+10 11 12
+
+input.txt	output.txt
+4		a
+bcda
+1 2 4 6
+
+input.txt	output.txt
+3		d
+adc
+1 5 7
