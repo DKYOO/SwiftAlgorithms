@@ -1,0 +1,51 @@
+Assignment name  : Stocks (C task Yandex)
+Expected files   : solution.swift
+Allowed functions: All 🙂
+--------------------------------------------------------------------------------
+
+Andrew trades Yandex shares on the stock exchange. Trades last N days. Andrew has information about the cost
+Yandex shares on each day of trading.
+Each day of trading, Andrew can sell and/or buy one share. But at the end of every day at Andrew
+there should be no more than one share left.
+Help Andrew determine how much he can earn by selling and buying shares
+Yandex in the best way.
+
+Input format:
+
+The first line of the input contains a single number N - the number of days the auction is going on.
+The second line of the input contains N non-negative integers A(i), where A(i) is the cost
+shares on the i-th trading day.
+
+Restrictions:
+
+1 ≤ N ≤ 10 pow 5
+
+0 ≤ A(i) ≤ 10 pow 4
+
+Output Format:
+
+Print one number - the maximum profit Andrew can get by selling and buying shares in the optimal way.
+
+
+Example:
+
+----------------------------------------------------------------------
+input.txt					output.txt
+
+5							4
+1 2 3 4 5
+
+----------------------------------------------------------------------
+input.txt					output.txt
+
+4							0
+10 9 8 7
+
+----------------------------------------------------------------------
+
+Notes:
+
+In the first example, it is optimal for Andrew to buy a share on the first day and sell it on the fifth.
+Thus, his benefit will be 5 − 1 = 4.
+
+In the second example, it is optimal for Andrew not to buy shares at all.
