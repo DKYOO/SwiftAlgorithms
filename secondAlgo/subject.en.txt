@@ -1,0 +1,65 @@
+Assignment name  : uniqUsers (B task Yandex)
+Expected files   : solution.swift
+Allowed functions: All 🙂
+--------------------------------------------------------------------------------
+
+Users enter the application by entering their email address. We have received logs from several applications and want to count the number of unique users who accessed them.
+
+Postal addresses consist of small Latin letters, periods (.), hyphens (-) and one (@). The part before the will be called the login, after the - the domain.
+
+The user can add as many points as he wants to his login, they are ignored, the login will still be successful. Also, the user can add a hyphen to his login, then the part of the login after the hyphen and the hyphen itself are ignored. For example, stalker@yandex.ru and s.t.a.l.k.e.r.@yandex.ru are considered one user, super-user@yandex.ru and sup.er@yandex.ru are also considered one user.
+
+These rules do not apply to a domain. Two users with the same login but different domains are considered different. Let's call the end of the domain the substring after the last dot. Then two domains that differ only in endings are considered the same. For example super@mail.yandex.ru and super@mail.yandex.com are one user, super@yandex.com and super@yandex.co.uk are different users.
+
+Input format:
+
+The first line of the input contains one number N - the number of mail addresses in the logs.
+
+The next N lines contain N postal addresses M(i), one address per line.
+
+It is guaranteed that every address contains the @ symbol and every domain contains at least a dot. Login can be empty.
+
+Restrictions:
+
+0 < N < 10 pow 5
+
+4 ≤ M(i).length < 50
+
+Output Format:
+
+Print one number - the number of unique users.
+
+
+Example:
+
+----------------------------------------------------------------------
+input.txt				output.txt
+
+2						1
+s.t.a.l.k.e.r.@yandex.ru
+stalker-winner@yandex.com
+
+
+----------------------------------------------------------------------
+input.txt				output.txt
+
+2						2
+user@yandex.ru
+user@ya.ru
+
+----------------------------------------------------------------------
+input.txt				output.txt
+
+2						2
+user@yandex.ru
+user@ya.ru
+
+----------------------------------------------------------------------
+input.txt				output.txt
+
+4						3
+s.t.a.l.k.e.r.@yandex.ru
+stalker-winner@yandex.com
+user@yandex.ru
+user@mail.yandex.ru
+----------------------------------------------------------------------
