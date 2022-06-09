@@ -1,4 +1,4 @@
-
+import Foundation
 let num = Int(readLine()!)!
 let str = Array(readLine()!)
 
