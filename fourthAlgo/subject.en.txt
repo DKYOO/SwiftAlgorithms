@@ -1,0 +1,62 @@
+Assignment name  : Improve your Character (D task Yandex)
+Expected files   : solution.swift
+Allowed functions: All 🙂
+--------------------------------------------------------------------------------
+
+Andrew loves to play one unknown game very much. During the game, Andrew's hero completes tasks and receives certain things in return. Each thing has a combat potential (BP), BP is some integer X. If X > 0, then the item is needed for the offensive, if X < 0, then the item is needed for defense, if X = 0, then the item is needed for witchcraft.
+
+The combat potential of the Hero is counted as the product of the combat potentials of all the things he possesses.
+
+Andrew has been playing for a long time and has accumulated N things. Andrei was approached by his friend Douglas with a request to give him one thing in order to save the hero Douglas from death. Andrei wants to help Douglas, but he also wants his own hero to have the maximum combat potential after he gives up one of the accumulated items.
+
+Write a program that will determine what item should be given to Douglas.
+
+Input format:
+
+The first line of the input contains a single number N - the number of objects that Andrew's hero has.
+The second line contains N integers A(i), where A(i) is the combat potential of the i-th item.
+
+Restrictions:
+
+1 ≤ N ≤ 10 pow 5
+
+-10 pow 9 ≤ A(i) ≤ 10 pow 9
+
+Output Format:
+
+Print a single number - the combat potential of the item that Andrew must give to Douglas, so that Andrew's hero has the maximum combat potential among all possible after the transfer. There can be several solutions, then any will do.
+
+
+Example:
+
+----------------------------------------------------------------------
+input.txt				output.txt
+
+6						1
+1 2 3 4 5 6
+
+----------------------------------------------------------------------
+input.txt				output.txt
+
+6						-6
+-1 -2 -3 -4 -5 -6
+
+----------------------------------------------------------------------
+input.txt				output.txt
+
+5						-1
+-1 -2 -3 -4 -5
+
+----------------------------------------------------------------------
+input.txt				output.txt
+
+4						0
+0 1 3 4
+
+----------------------------------------------------------------------
+input.txt				output.txt
+
+5						-5
+0 1 3 4 -5
+
+----------------------------------------------------------------------
