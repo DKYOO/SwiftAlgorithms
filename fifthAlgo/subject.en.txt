@@ -1,7 +1,7 @@
 Assignment name : Magic String (E task Yandex)
 Expected files : solution.swift
 Allowed functions: All 🙂
--------------------------------------------------- ------------------------------
+--------------------------------------------------------------------------------
 
 Antony loves riddles, especially those that can be solved with the help of programming. The other day a colleague puzzled him with finding "magic" strings. One string is considered "magic" in relation to another if they are equal in length and both consist of the same letters, with the exception of one letter in each of the strings.
 
@@ -30,27 +30,25 @@ Print −1 if the text does not contain "magic" substrings.
 
 Example:
 
--------------------------------------------------- --------------------
+----------------------------------------------------------------------
 input.txt output.txt
 
 abcddc 2
 ccde
 
--------------------------------------------------- --------------------
+----------------------------------------------------------------------
 input.txt output.txt
 
 abcd-1
 dcba
 
--------------------------------------------------- --------------------
+----------------------------------------------------------------------
 input.txt output.txt
 
 abcd-1
 abef
 
--------------------------------------------------- --------------------
-
-Notes:
+----------------------------------------------------------------------
 
 Example #1
 
@@ -59,11 +57,11 @@ abcddc
 ccde
 
 
-Conclusion: 2
+Output: 2
 
 Explanation: The substring cddc is "magic" for the string ccde, the excluded letters are d in the text substring T and e in the string S.
 
-
+----------------------------------------------------------------------
 Example #2
 
 Input:
